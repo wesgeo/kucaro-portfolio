@@ -2,7 +2,7 @@
   let videoPlaying = true;
   const toggleVideo = () => {
     videoPlaying = !videoPlaying;
-    const video = document.getElementById('bgVideo');
+    const video = document.getElementById("bgVideo");
     if (video instanceof HTMLVideoElement) {
       videoPlaying ? video.play() : video.pause();
     }
@@ -20,10 +20,7 @@
       loop
       playsinline
     >
-      <source
-        src="https://assets.mixkit.co/videos/preview/mixkit-set-of-scenes-about-fashion-9426-large.mp4"
-        type="video/mp4"
-      />
+      <source src="src/assets/KucaroDemoWeb.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
     <!-- Overlay -->
@@ -50,14 +47,16 @@
           on:click={toggleVideo}
           class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white/10 transition-colors"
         >
-          {videoPlaying ? 'Pause' : 'Play'} Reel
+          {videoPlaying ? "Pause" : "Play"} Reel
         </button>
       </div>
     </div>
   </div>
 
   <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+  <div
+    class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+  >
     <svg
       class="w-6 h-6 text-white"
       fill="none"
