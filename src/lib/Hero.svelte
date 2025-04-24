@@ -19,8 +19,12 @@
       muted
       loop
       playsinline
+      poster="src/assets/fallback.png"
     >
-      <source src="src/assets/KucaroDemoWeb.mp4" type="video/mp4" />
+      <source
+        src="https://cdn.jsdelivr.net/gh/wesgeo/kucaro-portfolio@main/src/assets/KucaroDemoWeb.mp4"
+        type="video/mp4"
+      />
       Your browser does not support the video tag.
     </video>
     <!-- Overlay -->
