@@ -86,6 +86,9 @@
           class="relative aspect-video overflow-hidden rounded-lg cursor-pointer transform transition-transform hover:scale-105"
           on:mouseenter={() => hoveredProject = project.id}
           on:mouseleave={() => hoveredProject = null}
+          role="button"
+          tabindex="0"
+          aria-label="View {project.title} project"
         >
           <img 
             src={project.thumbnail} 
